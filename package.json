@@ -16,10 +16,24 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "lint": "standard | snazzy",
+    "lint-fix": "standard --fix",
+    "precommit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.9.2"
+    "babel-eslint": "^8.2.1",
+    "lint-staged": "^6.0.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
+  },
+  "lint-staged": {
+    "*.js": ["standard --fix", "git add"]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "env": {
+      "jest": true
+    }
   }
 }
