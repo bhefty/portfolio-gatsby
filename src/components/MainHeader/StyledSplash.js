@@ -24,6 +24,27 @@ const StyledSplash = styled.div`
       margin-bottom: .1em;
     }
   }
+
+  section {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 96px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    div {
+      margin: 23px auto;
+      max-width: 360px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+
+      svg {
+        width: 50px;
+        height: 50px;
+        fill: #f4f4f4;
+      }
+    }
+  }
 `
 
 export default StyledSplash
