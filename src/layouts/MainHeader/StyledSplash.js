@@ -17,6 +17,12 @@ const StyledSplash = styled.div`
 
   header {
     margin: auto 0;
+    
+    h1 {
+      font-size: 4em;
+      letter-spacing: 5px;
+      margin-bottom: .1em;
+    }
   }
 `
 
