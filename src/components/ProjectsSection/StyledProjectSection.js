@@ -5,9 +5,16 @@ const StyledProjectSection = styled.section`
     margin: 0 auto;
     padding: 1em;
     max-width: 1200px;
-    display: grid;
-    grid-template-columns: 34% 64%;
-    grid-gap: 2%;
+    
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 34% 64%;
+      grid-gap: 2%;
+    }
+
+    @media (max-width: 768px) {
+
+    }
 
     img {
       width: 100%;
@@ -55,6 +62,16 @@ const StyledProjectSection = styled.section`
   
       &:active {
         box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+      }
+    }
+
+    .link-code {
+      background: #fff;
+      border: 1px solid #549657;
+      color: #549657;
+
+      &:hover {
+        color: #fff;
       }
     }
   }

@@ -17,8 +17,8 @@ const ProjectBanner = ({ title, description, technology, image, stackLogos, code
       {stackLogos.map((logo, idx) => logo(idx))}
     </div>
     <div className='links'>
-      <a href={codeLink} target='_blank'>Code</a>
-      <a href={demoLink} target='_blank'>Demo</a>
+      <a className='link-code' href={codeLink} target='_blank'>Code</a>
+      <a className='link-demo' href={demoLink} target='_blank'>Demo</a>
     </div>
   </StyledProjectSection>
 )
