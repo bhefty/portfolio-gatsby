@@ -4,8 +4,10 @@ import Helmet from 'react-helmet'
 
 import 'sanitize.css/sanitize.css'
 import './global-styles'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, location }) => (
   <div>
     <Helmet
       title='Bill Hefty'
@@ -14,9 +16,13 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'web, development, developer, javascript, react, bill hefty, portfolio' }
       ]}
     />
+    {(location.pathname !== '/') &&
+      <Navbar />
+    }
     <div>
       {children()}
     </div>
+    <Footer />
   </div>
 )
 
