@@ -12,10 +12,6 @@ const StyledProjectSection = styled.section`
       grid-gap: 2%;
     }
 
-    @media (max-width: 768px) {
-
-    }
-
     img {
       width: 100%;
     }
