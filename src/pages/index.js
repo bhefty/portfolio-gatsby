@@ -5,6 +5,7 @@ import About from '../components/About/About'
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection'
 import BlogSection from '../components/BlogSection/BlogSection'
 import ContactSection from '../components/ContactSection/ContactSection'
+import Footer from '../components/Footer/Footer'
 
 const IndexPage = () => (
   <div>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <ProjectsSection />
     <BlogSection />
     <ContactSection />
+    <Footer />
   </div>
 )
 
