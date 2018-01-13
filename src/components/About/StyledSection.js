@@ -26,6 +26,7 @@ const StyledSection = styled.div`
     }
 
     img {
+      margin: auto;
       width: 100%;
 
       @media (max-width: 768px) {

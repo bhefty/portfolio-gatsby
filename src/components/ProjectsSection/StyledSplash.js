@@ -18,6 +18,7 @@ const StyledSplash = styled.header`
     margin: auto 0;
     font-size: 4em;
     letter-spacing: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.95);
   }
 `
 

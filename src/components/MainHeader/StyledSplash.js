@@ -17,7 +17,8 @@ const StyledSplash = styled.div`
 
   header {
     margin: auto 0;
-    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.95);
+
     h1 {
       font-size: 4em;
       letter-spacing: 5px;
