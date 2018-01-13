@@ -33,11 +33,12 @@ const StyledProjectSection = styled.section`
 
   .links {
     text-align: center;
+    margin: 1.5em 0;
 
     a {
       display: inline-block;
       padding: 6px 12px;
-      margin: 2em 1em 1em 1em;
+      margin: 0.5em 1em;
       font-size: 14px;
       font-weight: 400;
       line-height: 1.42857143;
