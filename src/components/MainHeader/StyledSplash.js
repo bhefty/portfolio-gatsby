@@ -3,7 +3,10 @@ import styled from 'styled-components'
 import splashImage from './images/splash-macbook.jpg'
 
 const StyledSplash = styled.div`
-  background: #3d3f47 url(${splashImage}) no-repeat center center;
+  background-color: #3d3f47;
+  background-image: url(${splashImage});
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 
