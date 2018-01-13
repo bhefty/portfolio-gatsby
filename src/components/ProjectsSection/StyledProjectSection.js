@@ -22,7 +22,7 @@ const StyledProjectSection = styled.section`
     margin-top: 1em;
 
     img {
-      height: 45px;
+      height: 100%;
       margin: .5em;
     }
   }

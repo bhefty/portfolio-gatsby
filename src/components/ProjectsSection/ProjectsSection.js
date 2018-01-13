@@ -4,12 +4,14 @@ import StyledSplash from './StyledSplash'
 import StyledProjectsList from './StyledProjectsList'
 import ProjectBanner from './ProjectBanner'
 
-const NodeLogo = (idx) => (<img key={idx} src='https://chippd.github.io/img/techlogos/node.png' alt='Node.js logo' />)
-const ReactLogo = (idx) => (<img key={idx} src='https://spin.atomicobject.com/wp-content/uploads/20171016145535/ReactJS.png' alt='React.js logo' />)
-const ReduxLogo = (idx) => (<img key={idx} src='https://raw.githubusercontent.com/reactjs/redux/master/logo/logo-title-dark.png' alt='Redux logo' />)
-const MongoDBLogo = (idx) => (<img key={idx} src='https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg' alt='MongoDB logo' />)
-const WebsocketsLogo = (idx) => (<img key={idx} src='https://dret.net/lectures/iot-spring15/img/websockets-logo.png' alt='Websockets logo' />)
-const HerokuLogo = (idx) => (<img key={idx} src='https://i.imgur.com/lwa0UZ8.png' alt='Heroku logo' />)
+import {
+  NodeLogo,
+  ReactLogo,
+  ReduxLogo,
+  MongoDBLogo,
+  WebsocketsLogo,
+  HerokuLogo
+} from '../TechLogos/TechLogos'
 
 const sampleData = [{
   title: `Bit-Stocks`,
