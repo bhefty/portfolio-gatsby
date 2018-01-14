@@ -79,7 +79,7 @@ const StyledDiv = styled.div`
 
 const BlogPage = ({ data }) => (
   <div>
-    {data.allMarkdownRemark.edges.map((post) => (
+    {data.allMarkdownRemark.edges.map((post, idx) => (
       <StyledDiv key={post.node.id}>
         <div className='img-wrapper'>
           <img src={post.node.frontmatter.image.childImageSharp.sizes.src} alt={post.node.frontmatter.title} />
@@ -90,7 +90,9 @@ const BlogPage = ({ data }) => (
         <div className='link-wrapper'>
           <Link to={post.node.fields.slug}>Continue reading...</Link>
         </div>
-        <hr />
+        {idx + 1 !== data.allMarkdownRemark.edges.length &&
+          <hr />
+        }
       </StyledDiv>
     ))}
   </div>
