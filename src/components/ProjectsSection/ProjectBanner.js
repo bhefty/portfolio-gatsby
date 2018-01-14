@@ -2,14 +2,12 @@ import React from 'react'
 
 import StyledProjectSection from './StyledProjectSection'
 
-const ProjectBanner = ({ title, description, technology, image, stackLogos, codeLink, demoLink }) => (
+const ProjectBanner = ({ title, description, image, stackLogos, codeLink, demoLink }) => (
   <StyledProjectSection>
     <div className='container'>
       <div>
         <h2>{title}</h2>
-        <p>{description}</p>
-        <h3>Technology</h3>
-        <p>{technology}</p>
+        <div dangerouslySetInnerHTML={{ __html: description }} />
       </div>
       <img src={image} alt={title} />
     </div>
