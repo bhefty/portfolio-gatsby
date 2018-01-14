@@ -1,8 +1,9 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 import StyledBlogSection from './StyledBlogSection'
 
-const BlogBanner = ({ title, description, date, image, link }) => (
+const BlogBanner = ({ title, excerpt, date, image, slug }) => (
   <StyledBlogSection>
     <h2 className='heading'>The latest post:</h2>
     <h2 className='title'>{title}</h2>
@@ -10,10 +11,10 @@ const BlogBanner = ({ title, description, date, image, link }) => (
     <div className='img-container'>
       <img src={image} alt={title} />
     </div>
-    <p>{description}</p>
+    <p>{excerpt}</p>
     <div className='links'>
-      <a className='link-read' href={link} target='_blank'>Continue reading...</a>
-      <a className='link-all' href={'/'} target='_blank'>View all posts</a>
+      <Link className='link-read' to={slug}>Continue reading...</Link>
+      <Link className='link-all' to={'/blog'}>View all posts</Link>
     </div>
   </StyledBlogSection>
 )
