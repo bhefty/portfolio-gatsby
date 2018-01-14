@@ -1,5 +1,7 @@
 /* eslint no-fallthrough: 0 */
 import React from 'react'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
 
 import StyledSplash from './StyledSplash'
 import StyledProjectsList from './StyledProjectsList'
@@ -14,11 +16,52 @@ import {
   HerokuLogo
 } from '../TechLogos/TechLogos'
 
+const StyledSection = styled.section`
+  .link-container {
+    text-align: center;
+
+    .all-projects {
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 0.5em 1em;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.42857143;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      border: 1px solid #549657;
+      border-radius: 4px;
+  
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0px 2px 5px 1px darkgrey;
+  
+      color: #549657;
+      background: #fff;
+  
+      text-decoration: none;
+  
+      &:hover {
+        background: #3d7140;
+        color: #fff;
+      }
+  
+      &:active {
+        box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+      }
+    }
+  }
+`
+
 const ProjectsSection = ({ topProjects }) => (
-  <section>
+  <StyledSection>
     <StyledSplash>
       <h1>PROJECTS</h1>
     </StyledSplash>
+    <div className='link-container'>
+      <Link className='all-projects' to='/projects'>View All Projects</Link>
+    </div>
     <StyledProjectsList>
       {topProjects.map(topRpoject => {
         const project = topRpoject.node
@@ -47,7 +90,7 @@ const ProjectsSection = ({ topProjects }) => (
         )
       })}
     </StyledProjectsList>
-  </section>
+  </StyledSection>
 )
 
 export default ProjectsSection
