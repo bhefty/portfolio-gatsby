@@ -45,7 +45,7 @@ export const pageQuery = graphql`
       }
     }
   }
-  topProjects: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/src\/pages\/projects/" }, frontmatter: { top: { eq: true } } }, limit: 1) {
+  topProjects: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/src\/pages\/projects/" }, frontmatter: { top: { eq: true } } }, limit: 3) {
     edges {
       node {
         id
