@@ -5,6 +5,7 @@ hero: "./images/hero.jpg"
 code: "https://github.com/bhefty/bit-stocks"
 demo: "http://bit-stocks.herokuapp.com/"
 techStack: [node, react, websockets, heroku]
+top: true
 ---
 
 View and track stock prices for a given company. This view is shared worldwide with other users currently using the app.
