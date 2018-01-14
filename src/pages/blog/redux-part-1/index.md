@@ -1,5 +1,5 @@
 ---
-title: Part 1: The Case for React Redux Boilerplate
+title: "Part 1: The Case for React Redux Boilerplate"
 date: "2017-07-19"
 image: "./images/redux-part-1.jpg"
 ---
@@ -41,7 +41,7 @@ Testing has become very important to me. I’ve spent too much time `console.log
 
 ## Coverage Reports
 
-Using [Coveralls](https://coveralls.io/, I get a nice layout (and badge!) showing how much of my code is covered which gives a great confidence boost in my codebase. In addition, I’ve set a coverage threshold to make sure I’m not a completely untested code branch to production.
+Using [Coveralls](https://coveralls.io/), I get a nice layout (and badge!) showing how much of my code is covered which gives a great confidence boost in my codebase. In addition, I’ve set a coverage threshold to make sure I’m not a completely untested code branch to production.
 
 ## Continuous Integration/Deployment
 
