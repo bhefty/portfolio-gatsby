@@ -24,7 +24,6 @@ const StyledContainer = styled.main`
   
   .title {
     color: #555;
-    margin: 0.8em auto;
     max-width: 1000px;
     padding: 0 20px;
   }
