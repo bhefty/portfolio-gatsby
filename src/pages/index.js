@@ -23,7 +23,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1, filter: { fileAbsolutePath: { regex: "/src\/pages\/blog/" } }) {
       edges {
         node {
           id
