@@ -6,7 +6,6 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators
   if (node.internal.type === `MarkdownRemark` && /src\/pages\/blog\//gi.test(node.fileAbsolutePath)) {
     const slug = createFilePath({ node, getNode, basePath: `pages/blog` })
-    console.log(slug)
     createNodeField({
       node,
       name: `slug`,
@@ -32,7 +31,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        console.log(node.fields.slug)
         createPage({
           path: node.fields.slug,
           component: path.resolve(`./src/templates/blog-post.js`),
