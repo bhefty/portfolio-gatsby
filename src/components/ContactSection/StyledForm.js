@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { colors } from '../../layouts/colors'
 
 const StyledForm = styled.form`
   text-align: center;
@@ -10,7 +11,7 @@ const StyledForm = styled.form`
 
   input, textarea {
     margin: 0.25em 0;
-    background: #fff;
+    background: ${colors.whiteAlt};
     border: 0;
     padding: 0.5em 1em;
     width: 100%;
@@ -18,15 +19,11 @@ const StyledForm = styled.form`
 
   .submit {
     padding: 0.75em;
-    border: 1px solid #549657;
-    color: #549657;
-    box-shadow: 0px 2px 5px 1px darkgrey;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: ${colors.whiteAlt};
     cursor: pointer;
-
-    &:hover {
-      background: #4A8B4D;
-      color: #fff;
-    }
+    background: ${colors.darkAccent};
   }
 `
 

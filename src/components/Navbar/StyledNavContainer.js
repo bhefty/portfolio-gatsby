@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { colors } from '../../layouts/colors'
 
 const StyledNavContainer = styled.div`
-  background-color: #2F3440;
+  background-color: ${colors.primary};
   height: 48px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.18), 0 2px 3px rgba(0,0,0,0.26);
   white-space: nowrap;
@@ -39,12 +40,12 @@ const StyledNavContainer = styled.div`
   }
   
   a, a:visited {
-    color: #ECEFF4;
+    color: ${colors.whiteLight};
     text-decoration: none;
   }
   
   a:hover {
-    background-color: #37474f;
+    background-color: ${colors.lightAccent};
   }
   
   .button {

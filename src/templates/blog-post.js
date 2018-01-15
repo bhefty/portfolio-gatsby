@@ -1,6 +1,7 @@
 /* global graphql */
 import React from 'react'
 import styled from 'styled-components'
+import { colors } from '../layouts/colors'
 
 const StyledContainer = styled.main`
   padding-bottom: 50px;
@@ -16,20 +17,35 @@ const StyledContainer = styled.main`
   }
 
   .date {
-    color: #a0a6ab;
+    color: ${colors.lightAccent};
     letter-spacing: 2px;
     margin-top: 1em;
     text-align: center;
   }
   
   .title {
-    color: #555;
+    color: ${colors.darkShade};
+    font-size: 2.25em;
     max-width: 1000px;
     padding: 0 20px;
   }
 
   .content {
     padding: 0 20px;
+  }
+
+  a {
+    color: ${colors.lightAccent};
+    text-decoration: none;
+  }
+
+  code {
+    background-color: ${colors.lightShade};
+  }
+
+  pre {
+    padding: 1em;
+    background-color: ${colors.lightShade};
   }
 `
 

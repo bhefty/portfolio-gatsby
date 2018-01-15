@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import { colors } from '../../layouts/colors'
 
 const StyledFooter = styled.footer`
   text-align: center;
-  background-color: #3A4354;
-  color: #f4f4f4;
+  background-color: ${colors.darkShade};
+  color: ${colors.whiteLight};
   padding: 4em 0 2em 0;
 
   .copyright {

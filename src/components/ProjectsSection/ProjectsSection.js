@@ -1,6 +1,5 @@
 /* eslint no-fallthrough: 0 */
 import React from 'react'
-import Link from 'gatsby-link'
 
 import StyledSplash from './StyledSplash'
 import StyledProjectsList from './StyledProjectsList'
@@ -20,9 +19,6 @@ const ProjectsSection = ({ topProjects }) => (
     <StyledSplash>
       <h1>PROJECTS</h1>
     </StyledSplash>
-    <div className='link-container'>
-      <Link className='all-projects' to='/projects'>View All Projects</Link>
-    </div>
     <StyledProjectsList>
       {topProjects.map(topRpoject => {
         const project = topRpoject.node

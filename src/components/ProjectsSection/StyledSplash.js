@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import { colors } from '../../layouts/colors'
 
 import splashImage from './images/splash-projects.jpg'
 
 const StyledSplash = styled.header`
-  background: #3d3f47 url(${splashImage}) no-repeat center center;
+  background: url(${splashImage}) no-repeat center center;
   background-size: cover;
 
   display: grid;
@@ -12,7 +13,7 @@ const StyledSplash = styled.header`
 
   overflow: hidden;
   text-align: center;
-  color: #f4f4f4;
+  color: ${colors.whiteLight};
 
   h1 {
     margin: auto 0;

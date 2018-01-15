@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { colors } from '../../layouts/colors'
 
 const StyledProjectSection = styled.section`
   .container {
@@ -46,30 +47,17 @@ const StyledProjectSection = styled.section`
   
       width: 100%;
       max-width: 200px;
-      box-shadow: 0px 2px 5px 1px darkgrey;
   
-      color: white;
-      background: #549657;
+      color: ${colors.whiteAlt};
+      background: ${colors.darkAccent};
   
       text-decoration: none;
-  
-      &:hover {
-        background: #3d7140;
-      }
-  
-      &:active {
-        box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
-      }
     }
 
     .link-all {
-      background: #fff;
-      border: 1px solid #549657;
-      color: #549657;
-
-      &:hover {
-        color: #fff;
-      }
+      background: ${colors.whiteAlt};
+      border: 1px solid ${colors.darkAccent};
+      color: ${colors.darkAccent};
     }
   }
 `

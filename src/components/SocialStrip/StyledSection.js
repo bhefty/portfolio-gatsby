@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { colors } from '../../layouts/colors'
 
 const StyledSection = styled.section`
   height: 100%;
@@ -13,7 +14,7 @@ const StyledSection = styled.section`
     svg {
       width: 30px;
       height: 30px;
-      fill: #f4f4f4;
+      fill: ${colors.whiteLight};
     }
   }
 `

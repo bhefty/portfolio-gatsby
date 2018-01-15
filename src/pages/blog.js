@@ -2,6 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
+import { colors } from '../layouts/colors'
 
 const StyledDiv = styled.div`
   margin: 1em auto 3em auto;
@@ -20,7 +21,7 @@ const StyledDiv = styled.div`
   }
 
   .title {
-    color: #555;
+    color: ${colors.darkShade};
     max-width: 1000px;
     text-align: center;
     font-size: 2.5em;
@@ -51,20 +52,11 @@ const StyledDiv = styled.div`
   
       width: 100%;
       max-width: 200px;
-      box-shadow: 0px 2px 5px 1px darkgrey;
   
-      color: white;
-      background: #549657;
+      color: ${colors.whiteAlt};
+      background: ${colors.darkAccent};
   
       text-decoration: none;
-  
-      &:hover {
-        background: #3d7140;
-      }
-  
-      &:active {
-        box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
-      }
     }
   }
 

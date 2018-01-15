@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import { colors } from '../../layouts/colors'
 
 import splashImage from './images/splash-macbook.jpg'
 
 const StyledSplash = styled.div`
-  background: #3d3f47 url(${splashImage}) no-repeat center center;
+  background: url(${splashImage}) no-repeat center center;
   background-size: cover;
   // background-attachment: fixed;
 
@@ -13,7 +14,7 @@ const StyledSplash = styled.div`
 
   overflow: hidden;
   text-align: center;
-  color: #f4f4f4;
+  color: ${colors.whiteAlt};
 
   header {
     margin: auto 0;
@@ -42,7 +43,7 @@ const StyledSplash = styled.div`
       svg {
         width: 50px;
         height: 50px;
-        fill: #f4f4f4;
+        fill: ${colors.whiteLight};
       }
     }
   }

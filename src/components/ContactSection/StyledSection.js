@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { colors } from '../../layouts/colors'
 
 const StyledSection = styled.section`
-  background-color: #f4f4f4;
+  background-color: ${colors.primary};
   height: 100%;
 `
 

@@ -1,6 +1,7 @@
 /* global graphql */
 import React from 'react'
 import styled from 'styled-components'
+import { colors } from '../layouts/colors'
 
 import {
   NodeLogo,
@@ -38,10 +39,10 @@ const StyledDiv = styled.div`
   }
 
   .title {
-    color: #555;
+    color: ${colors.darkShade};
     max-width: 1000px;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2.25em;
   }
 
   .link-wrapper {
@@ -63,30 +64,17 @@ const StyledDiv = styled.div`
   
       width: 100%;
       max-width: 200px;
-      box-shadow: 0px 2px 5px 1px darkgrey;
   
-      color: white;
-      background: #549657;
+      color: ${colors.whiteAlt};
+      background: ${colors.darkAccent};
   
       text-decoration: none;
-  
-      &:hover {
-        background: #3d7140;
-      }
-  
-      &:active {
-        box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
-      }
     }
 
-    .link-code {
-      background: #fff;
-      border: 1px solid #549657;
-      color: #549657;
-
-      &:hover {
-        color: #fff;
-      }
+    .link-demo {
+      background: ${colors.whiteAlt};
+      border: 1px solid ${colors.darkAccent};
+      color: ${colors.darkAccent};
     }
   }
 
@@ -122,8 +110,8 @@ const ProjectsPage = ({ data }) => (
           })}
         </div>
         <div className='link-wrapper'>
-          <a className='link-code' href={project.node.frontmatter.code} target='_blank'>Code</a>
-          <a href={project.node.frontmatter.demo} target='_blank'>Demo</a>
+          <a href={project.node.frontmatter.code} target='_blank'>Code</a>
+          <a className='link-demo' href={project.node.frontmatter.demo} target='_blank'>Demo</a>
         </div>
         {idx + 1 !== data.allMarkdownRemark.edges.length &&
           <hr />
