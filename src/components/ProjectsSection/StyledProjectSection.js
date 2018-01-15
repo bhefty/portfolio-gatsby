@@ -62,7 +62,7 @@ const StyledProjectSection = styled.section`
       }
     }
 
-    .link-code {
+    .link-all {
       background: #fff;
       border: 1px solid #549657;
       color: #549657;

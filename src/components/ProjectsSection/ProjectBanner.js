@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 import StyledProjectSection from './StyledProjectSection'
 
@@ -17,6 +18,7 @@ const ProjectBanner = ({ title, description, image, stackLogos, codeLink, demoLi
     <div className='links'>
       <a className='link-code' href={codeLink} target='_blank'>Code</a>
       <a className='link-demo' href={demoLink} target='_blank'>Demo</a>
+      <Link className='link-all' to='/projects'>View More Projects</Link>
     </div>
   </StyledProjectSection>
 )
