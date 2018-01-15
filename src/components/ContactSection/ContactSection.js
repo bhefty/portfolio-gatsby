@@ -10,7 +10,8 @@ const ContactSection = () => (
       <h1>CONTACT ME</h1>
     </StyledSplash>
     <StyledForm
-      action='https://formspree.io/billhefty@gmail.com'
+      data-netlify='true'
+      data-netlify-honeypot='bot-field'
       method='POST'
     >
       <input type='text' name='name' placeholder='Name' />
