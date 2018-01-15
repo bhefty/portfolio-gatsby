@@ -46,6 +46,8 @@ const StyledContainer = styled.main`
   pre {
     padding: 1em;
     background-color: ${colors.lightShade};
+    word-wrap: normal;
+    overflow: auto;
   }
 `
 
