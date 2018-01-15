@@ -31,7 +31,7 @@ const StyledSplash = styled.div`
     background-color: rgba(0, 0, 0, 0.65);
     height: 96px;
     position: absolute;
-    bottom: 0;
+    top: calc(100vh - 96px);
     width: 100%;
 
     div {
