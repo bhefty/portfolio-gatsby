@@ -11,10 +11,9 @@ const ContactSection = () => (
     </StyledSplash>
     <StyledForm
       name='contact'
-      netlify='true'
-      netlify-honeypot='bot-field'
+      data-netlify='true'
+      data-netlify-honeypot='bot-field'
       method='POST'
-      action='/'
     >
       <input type='text' name='name' placeholder='Name' />
       <input type='email' name='_replyto' placeholder='Your email' />
