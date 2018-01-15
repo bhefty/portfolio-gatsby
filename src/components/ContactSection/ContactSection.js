@@ -14,6 +14,7 @@ const ContactSection = () => (
       netlify='true'
       netlify-honeypot='bot-field'
       method='POST'
+      action='/'
     >
       <input type='text' name='name' placeholder='Name' />
       <input type='email' name='_replyto' placeholder='Your email' />
